@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Home page hero refresh to promote AI App Builder",
+  "requirements": [
+    {
+      "id": "REQ-20",
+      "summary": "Update the Home page hero headline and styling to strongly promote the AI App Builder with high-contrast emphasis while preserving the existing full-bleed image + readability overlay pattern.",
+      "acceptanceCriteria": [
+        "On the Home page hero, the primary H1 text is exactly: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" (including punctuation and capitalization).",
+        "The hero styling uses more striking/high-contrast emphasis than the current treatment (e.g., stronger gradient/overlay + vivid accent highlights) while keeping text readable over the existing full-width hero image in both light and dark mode.",
+        "The hero remains responsive and visually stable across mobile and desktop, preserving the current full-bleed background image approach and readability overlay behavior."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Update the hero H1 to exactly \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" and restyle the hero for higher contrast while keeping the existing full-bleed background image (using frontend/public/assets/generated/sidehusl-hero-full.dim_1920x900.jpg) and overlay readability pattern. Increase visual impact via stronger overlay layering (e.g., deeper background fade + vivid primary/accent-tinted wash) and add more prominent headline emphasis (e.g., gradient text/accents) while ensuring readability in both light/dark themes. Continue using the shadcn-ui Button component for CTAs (Verify the component's usage instructions before implementing)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add a small, reusable utility (e.g., a subtle text-shadow / glow utility class) to improve hero text legibility over the full-bleed image in both light and dark modes without changing the global layout/navigation. Ensure the utility is optional and only applied where needed (e.g., Home hero headline/supporting text)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Adjust the Home page hero supporting copy and CTAs so the primary CTA navigates to /builder and the hero copy promotes the AI App Builder in English without breaking existing navigation paths.",
+      "acceptanceCriteria": [
+        "The Home page hero includes a primary CTA button that navigates to /builder.",
+        "All updated hero badge/subheadline/CTA labels are in English and align with promoting the AI App Builder (not job discovery).",
+        "Existing secondary navigation options (e.g., browse/submit) are not broken; any remaining hero CTAs continue to navigate correctly."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Rewrite the hero badge/subheadline/supporting copy to promote the AI App Builder (English only). Replace the current primary hero CTA so it routes to /builder (e.g., \"Open AI App Builder\") while keeping at least one secondary CTA that continues to navigate correctly to an existing destination (e.g., /browse and/or /submit). Ensure the button hierarchy clearly indicates /builder as primary. Continue using the shadcn-ui Button component for CTAs (Verify the component's usage instructions before implementing)."
+        }
+      ]
+    }
+  ]
+}

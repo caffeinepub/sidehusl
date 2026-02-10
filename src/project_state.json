@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 15,
+  "summary": "Pivot/rebrand SIDEHUSL into SIDEHU$L AI ($IDEHUSL AI): an AI-focused platform including a branded AI app builder experience (similar to caffeine.ai) plus wallet-based micropayments and creator resources, while retaining/expanding beyond the original side-job discovery concept.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-the-sidehusl-application-shell-and-navigation-structure-for-a-side-job-discovery-app-focused-on-local-part-time-opportunities-in-the-tech-and-crypto-industry",
+      "title": "Create the SIDEHUSL application shell and navigation structure for a side-job discovery app focused on local/part-time opportunities in the tech and crypto industry.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-distinctive-visual-theme-for-sidehusl-colors-typography-spacing-and-component-styling-and-apply-it-consistently-across-all-screens",
+      "title": "Implement a coherent, distinctive visual theme for SIDEHUSL (colors, typography, spacing, and component styling) and apply it consistently across all screens.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-support-user-submission-of-new-opportunities-from-the-frontend-and-corresponding-backend-api-that-runs-screening-on-submission-and-stores-the-result",
+      "title": "Support user submission of new opportunities from the frontend and corresponding backend API that runs screening on submission and stores the result.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-featured-promoted-opportunity-mechanism-and-ensure-the-first-promoted-listing-is-xeris-mining-with-the-link-https-xerisweb-com",
+      "title": "Add a Featured/Promoted opportunity mechanism and ensure the first promoted listing is Xeris Mining with the link https://xerisweb.com/.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-browse-ui-to-display-opportunities-as-cards-list-items-including-title-tags-tech-crypto-remote-local-barrier-to-entry-and-screening-summary-validity-value-scores-key-reasons-with-sorting-options-that-prioritize-higher-screened-quality-by-default",
+      "title": "Build the Browse UI to display opportunities as cards/list items including title, tags (tech/crypto), remote/local, barrier-to-entry, and screening summary (validity/value scores + key reasons), with sorting options that prioritize higher screened quality by default.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-opportunity-details-view-that-shows-full-description-external-link-and-a-transparent-explanation-of-screening-results-reasons-flags",
+      "title": "Add an Opportunity details view that shows full description, external link, and a transparent explanation of screening results (reasons/flags).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-basic-brand-static-assets-for-sidehusl-logo-and-a-hero-banner-illustration-and-render-them-from-frontend-public-assets-generated-in-the-ui",
+      "title": "Generate and include basic brand static assets for SIDEHUSL (logo and a hero/banner illustration) and render them from frontend/public/assets/generated in the UI.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-page-hero-section-to-use-the-user-uploaded-image-as-a-full-size-full-width-header-hero-image-instead-of-the-current-smaller-right-column-hero-image-while-keeping-the-existing-hero-headline-description-and-cta-buttons-readable-via-an-overlay-gradient-and-ensuring-responsive-behavior-across-mobile-and-desktop",
+      "title": "Update the Home page hero section to use the user-uploaded image as a full-size, full-width header/hero image (instead of the current smaller right-column hero image), while keeping the existing hero headline, description, and CTA buttons readable via an overlay/gradient and ensuring responsive behavior across mobile and desktop.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-sidehu-l-ai-app-builder-section-to-the-app-that-provides-a-chat-style-app-building-experience-inspired-by-https-caffeine-ai-chat-019c44fe-3bba-76f5-9235-a41f2c9143c5-with-all-user-facing-text-in-english-and-branded-as-sidehu-l-ai-app-builder",
+      "title": "Add a new “SIDEHU$L AI App Builder” section to the app that provides a chat-style app-building experience inspired by https://caffeine.ai/chat/019c44fe-3bba-76f5-9235-a41f2c9143c5, with all user-facing text in English and branded as “SIDEHU$L AI App Builder”.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-global-navigation-to-include-an-entry-point-to-the-new-ai-app-builder-page-available-in-both-desktop-navigation-and-the-mobile-menu",
+      "title": "Update the global navigation to include an entry point to the new “AI App Builder” page, available in both desktop navigation and the mobile menu.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-deterministic-non-llm-builder-assistant-behavior-for-the-chat-ui-that-can-produce-structured-outputs-e-g-an-app-outline-page-list-data-model-sketch-and-a-step-by-step-build-plan-based-solely-on-simple-rules-templates-without-calling-any-external-ai-services",
+      "title": "Implement a deterministic, non-LLM “builder assistant” behavior for the chat UI that can produce structured outputs (e.g., an app outline, page list, data model sketch, and a step-by-step build plan) based solely on simple rules/templates, without calling any external AI services.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-frontend-data-hooks-react-query-and-ui-wiring-for-builder-sessions-load-session-list-create-a-new-session-load-message-history-and-append-new-user-messages-and-assistant-responses-into-the-active-session",
+      "title": "Add frontend data hooks (React Query) and UI wiring for builder sessions: load session list, create a new session, load message history, and append new user messages and assistant responses into the active session.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-landing-page-hero-promo-copy-to-position-the-product-as-an-ai-powered-app-builder-using-the-exact-headline-text-sidehu-l-ai-build-your-hu-tle-today-and-supporting-text-that-communicates-ai-powered-appbuilder-for-people-to-build-their-own-app-to-make-money-as-a-side-hustle-in-correct-english-apply-these-copy-changes-in-the-hero-section-of-the-landing-page-while-keeping-the-existing-full-width-hero-image-overlay-gradient-readability-and-responsive-behavior-intact",
+      "title": "Update the Home/Landing page hero promo copy to position the product as an AI-powered app builder, using the exact headline text: \"SIDEHU$L AI — BUILD YOUR HU$TLE TODAY\" and supporting text that communicates \"AI powered appbuilder for people to build their own app to make money as a side hustle\" (in correct English). Apply these copy changes in the hero section of the landing page while keeping the existing full-width hero image, overlay gradient readability, and responsive behavior intact.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-submit-opportunity-form-to-include-ai-as-a-first-class-category-option-alongside-tech-and-crypto-and-ensure-the-category-selection-is-clearly-framed-as-tech-crypto-ai-related-submissions-update-any-relevant-on-page-helper-copy-in-english",
+      "title": "Update the Submit Opportunity form to include AI as a first-class category option alongside Tech and Crypto, and ensure the category selection is clearly framed as Tech/Crypto/AI-related submissions (update any relevant on-page helper copy in English).",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-browse-category-filtering-ui-to-include-the-new-ai-category-option-and-adjust-browse-page-helper-copy-to-reflect-tech-crypto-and-ai-opportunities",
+      "title": "Update Browse category filtering UI to include the new \"AI\" category option and adjust browse page helper copy to reflect Tech, Crypto, and AI opportunities.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-page-header-hero-section-to-prominently-advertise-the-ai-app-builder-using-striking-high-contrast-styling-and-the-exact-hero-headline-text-sidehusl-ai-build-your-side-hustle-today",
+      "title": "Update the Home page header/hero section to prominently advertise the AI App Builder using striking, high-contrast styling and the exact hero headline text: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-home-page-hero-supporting-copy-and-call-to-action-buttons-so-the-primary-cta-clearly-routes-users-to-the-ai-app-builder-page-builder-while-keeping-all-user-facing-text-in-english",
+      "title": "Adjust the Home page hero supporting copy and call-to-action buttons so the primary CTA clearly routes users to the AI App Builder page (/builder), while keeping all user-facing text in English.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create SIDEHUSL app concept: AI-powered finder for local/part-time side jobs focused on tech/crypto with low/no barrier to entry",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement AI screening/ranking of listed jobs for validity and value (scam/low-quality filtering)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add featured/promoted opportunity placement with Xeris Mining as the first promoted listing (https://xerisweb.com/)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Define and persist an Opportunity (side job) data model in the Motoko backend, including fields needed for local/part-time discovery and screening (e.g., title, company/source, description, link, category tags for tech/crypto, location/remote flag, estimated barrier-to-entry level, and created timestamps).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement backend APIs to support opportunity browsing: list opportunities with pagination and filters (at minimum: remote/local, category/tags, and barrier-to-entry), and fetch a single opportunity by id.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement an automated screening system in the backend that evaluates each opportunity for (1) validity and (2) value, producing numeric scores and human-readable reasons based on deterministic rules/heuristics (no external AI services).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update UI so the hero/banner image displays as a full-size header/hero image (full-width prominent placement)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Adjust Home page full-width hero image behavior on mobile (responsive layout/cropping/overlay for readability).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add wallet connect + account abstraction and support x402-based micropayments for services.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add an \"AI and prompt writers\" course section for LLM/AI creators.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Aggregate and provide access to as many free AI and image generators as possible within the app.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Build an AI-powered app maker that provides coding services, including cloning existing code and enabling rebranding flows.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Add a rebranded AI app builder experience similar to https://caffeine.ai/chat/019c44fe-3bba-76f5-9235-a41f2c9143c5 under the SIDEHU$L AI brand.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Persist builder chat sessions in the Motoko backend, scoped per authenticated user (principal), including APIs to: create a session, append messages, list a user’s sessions, and fetch a session’s message history.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Update Home/Landing hero promo messaging to: \"SIDEHU$L AI — BUILD YOUR HU$TLE TODAY\" and position the product as an AI-powered app builder for people to build their own app to make money as a side hustle.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Refine the Opportunity submission section so users can submit/label opportunities across all Tech, Crypto, and AI-related categories (update tags/category options and any related UI copy/validation).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Update the Home/Landing header hero to prominently advertise the AI App Builder with striking colors and headline text: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "SIDEHU$L AI",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "build_request",
+  "title": "Update Home page hero to promote the AI App Builder with striking colors and new headline copy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-20",
+      "text": "Update the Home page header/hero section to prominently advertise the AI App Builder using striking, high-contrast styling and the exact hero headline text: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Advertise the AI App builder on header Hero in steik8ng colors ,reading ,\" SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the Home page hero, the primary H1 text is exactly: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" (including punctuation and capitalization).",
+        "The hero styling uses more striking/high-contrast emphasis than the current treatment (e.g., stronger gradient/overlay + vivid accent highlights) while keeping text readable over the existing full-width hero image in both light and dark mode.",
+        "The hero remains responsive and visually stable across mobile and desktop, preserving the current full-bleed background image approach and readability overlay behavior."
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Adjust the Home page hero supporting copy and call-to-action buttons so the primary CTA clearly routes users to the AI App Builder page (/builder), while keeping all user-facing text in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Advertise the AI App builder on header Hero in steik8ng colors ,reading ,\" SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Home page hero includes a primary CTA button that navigates to /builder.",
+        "All updated hero badge/subheadline/CTA labels are in English and align with promoting the AI App Builder (not job discovery).",
+        "Existing secondary navigation options (e.g., browse/submit) are not broken; any remaining hero CTAs continue to navigate correctly."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/immutablePaths (e.g., frontend/src/hooks/useInternetIdentity.ts(x), frontend/src/hooks/useActor.ts, frontend/src/main.tsx, and frontend/src/components/ui).",
+    "Keep the Home page hero as a full-width, full-size header image with an overlay for readability (do not remove the current full-bleed hero image pattern)."
+  ],
+  "nonGoals": [
+    "Do not add new backend APIs or modify Motoko canister state for this change.",
+    "Do not redesign global navigation or add new pages/routes beyond updating the Home page hero content and styling."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
