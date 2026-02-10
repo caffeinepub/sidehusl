@@ -27,18 +27,13 @@ export default function HomePage() {
 
         {/* Hero Content */}
         <div className="container relative z-10 py-20 md:py-32">
-          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
             <div className="inline-block">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-primary text-sm font-bold shadow-glow-sm">
+              <span className="inline-flex items-center gap-2 text-primary text-sm font-bold">
                 <Sparkles className="h-4 w-4" />
                 AI-Powered App Builder
               </span>
             </div>
-            <h1 className="font-display text-hero-glow">
-              <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
-                SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!
-              </span>
-            </h1>
             <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto font-medium text-hero-glow">
               Create your own AI-powered web app in minutes. No coding required. 
               Turn your ideas into reality with our intelligent app builder.

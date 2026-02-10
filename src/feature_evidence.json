@@ -2,28 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-home-page-header-hero-section-to-prominently-advertise-the-ai-app-builder-using-striking-high-contrast-styling-and-the-exact-hero-headline-text-sidehusl-ai-build-your-side-hustle-today",
-      "featureTitle": "Update the Home page header/hero section to prominently advertise the AI App Builder using striking, high-contrast styling and the exact hero headline text: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"",
-      "files": [
-        "frontend/src/index.css",
-        "frontend/src/pages/HomePage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0",
-        "authorization@4.0.0"
-      ],
-      "testIds": [
-        "REQ-20"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-adjust-the-home-page-hero-supporting-copy-and-call-to-action-buttons-so-the-primary-cta-clearly-routes-users-to-the-ai-app-builder-page-builder-while-keeping-all-user-facing-text-in-english",
-      "featureTitle": "Adjust the Home page hero supporting copy and call-to-action buttons so the primary CTA clearly routes users to the AI App Builder page (/builder), while keeping all user-facing text in English.",
+      "featureId": "feature-remove-the-home-page-hero-headline-block-that-displays-the-text-sidehusl-ai-build-your-side-hustle-today-from-the-hero-section-on-the-landing-page-frontend-src-pages-homepage-tsx-while-keeping-the-rest-of-the-hero-content-the-ai-powered-app-builder-label-supporting-paragraph-and-cta-buttons-intact-and-visually-balanced",
+      "featureTitle": "Remove the Home page hero headline block that displays the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" from the hero section on the landing page (frontend/src/pages/HomePage.tsx), while keeping the rest of the hero content (the \"AI-Powered App Builder\" label, supporting paragraph, and CTA buttons) intact and visually balanced.",
       "files": [
         "frontend/src/pages/HomePage.tsx"
       ],
@@ -36,7 +16,7 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-21"
+        "REQ-24"
       ],
       "confidence": "high"
     }

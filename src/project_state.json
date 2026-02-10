@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 15,
+  "projectStateVersion": 21,
   "summary": "Pivot/rebrand SIDEHUSL into SIDEHU$L AI ($IDEHUSL AI): an AI-focused platform including a branded AI app builder experience (similar to caffeine.ai) plus wallet-based micropayments and creator resources, while retaining/expanding beyond the original side-job discovery concept.",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": false,
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-the-sidehusl-application-shell-and-navigation-structure-for-a-side-job-discovery-app-focused-on-local-part-time-opportunities-in-the-tech-and-crypto-industry",
@@ -141,6 +141,30 @@
         "REQ-21"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-home-page-hero-headline-text-styling-so-the-headline-sidehusl-ai-build-your-side-hustle-today-renders-in-a-green-to-blue-gradient-color-treatment-similar-to-an-open-app-builder-green-blue-scheme-replacing-the-current-primary-accent-gradient-on-that-headline-only",
+      "title": "Update the Home page hero headline text styling so the headline \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" renders in a green-to-blue gradient color treatment (similar to an “Open App Builder” green/blue scheme), replacing the current primary/accent gradient on that headline only.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-background-color-backdrop-behind-the-hero-words-on-the-home-page-so-the-label-text-renders-as-plain-text-no-filled-pill-gradient-background-while-keeping-the-existing-hero-headline-and-page-layout-intact",
+      "title": "Remove the background color/backdrop behind the hero words on the Home page so the label text renders as plain text (no filled pill/gradient background), while keeping the existing hero headline and page layout intact.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-home-page-hero-headline-block-that-displays-the-text-sidehusl-ai-build-your-side-hustle-today-from-the-hero-section-on-the-landing-page-frontend-src-pages-homepage-tsx-while-keeping-the-rest-of-the-hero-content-the-ai-powered-app-builder-label-supporting-paragraph-and-cta-buttons-intact-and-visually-balanced",
+      "title": "Remove the Home page hero headline block that displays the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" from the hero section on the landing page (frontend/src/pages/HomePage.tsx), while keeping the rest of the hero content (the \"AI-Powered App Builder\" label, supporting paragraph, and CTA buttons) intact and visually balanced.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -249,8 +273,8 @@
       "status": "pending"
     },
     {
-      "id": "AR-22",
-      "summary": "Update the Home/Landing header hero to prominently advertise the AI App Builder with striking colors and headline text: \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\"",
+      "id": "AR-24",
+      "summary": "Remove the background color behind the hero/header text, leaving only the words visible (no colored backdrop).",
       "reqIds": [],
       "status": "pending"
     }

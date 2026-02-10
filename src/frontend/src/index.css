@@ -99,6 +99,15 @@
             0 2px 8px oklch(0 0 0 / 0.3);
     }
     
+    /* Green to blue gradient for hero headline - Open App Builder style */
+    .gradient-green-blue {
+        background: linear-gradient(135deg, 
+            oklch(0.70 0.20 150) 0%,    /* Vibrant green */
+            oklch(0.68 0.22 180) 50%,   /* Teal transition */
+            oklch(0.65 0.20 220) 100%   /* Bright blue */
+        );
+    }
+    
     /* Animated gradient for hero text */
     .animate-gradient {
         background-size: 200% auto;
