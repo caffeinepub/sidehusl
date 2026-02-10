@@ -1,21 +1,23 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove Home page hero headline block",
+  "title": "Reorder and top-align landing page hero supporting copy",
   "requirements": [
     {
-      "id": "REQ-24",
-      "summary": "Remove the Home page hero headline text block while keeping the remaining hero label, supporting paragraph, and CTA buttons visually balanced.",
+      "id": "REQ-26",
+      "summary": "Move the hero supporting paragraph to the top of the Home page hero content and adjust layout spacing so it sits as high as practical while preserving readability, overlays/gradients, and existing CTAs/routes.",
       "acceptanceCriteria": [
-        "On the Home page hero section, the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" is not rendered anywhere.",
-        "The hero section still displays the \"AI-Powered App Builder\" label, the supporting paragraph, and both CTA buttons, without awkward extra spacing where the headline used to be.",
-        "No other pages or global navigation elements are changed."
+        "In the Home page hero, the supporting paragraph starting with “Create your own AI-powered web app in minutes. No coding required.” appears above the “AI-Powered App Builder” label (and above the CTA buttons).",
+        "The hero content layout is adjusted (e.g., padding/margins/vertical alignment) so this paragraph is positioned at the top of the hero content area rather than centered, especially on mobile.",
+        "The existing hero overlay/gradients remain in place and the paragraph remains readable over the background image in both light and dark themes.",
+        "No user-facing copy in that paragraph is changed (English text remains exactly as currently shown).",
+        "The CTA buttons and their routes remain unchanged and continue to render correctly across responsive breakpoints."
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/HomePage.tsx",
           "operation": "modify",
-          "description": "Remove the <h1> block that renders the hero headline text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" and adjust the hero content stack spacing (e.g., the container's spacing utilities and/or CTA top padding) so the remaining label, paragraph, and buttons remain centered and visually balanced without a noticeable gap."
+          "description": "In the hero section, reorder the hero content so the supporting paragraph (beginning with “Create your own AI-powered web app in minutes. No coding required.”) renders first, above the “AI-Powered App Builder” label and above the CTA buttons. Update hero container/section layout classes to top-align the hero content within the hero area (e.g., adjust flex alignment and top padding/margins) with responsive spacing so it sits as high as practical on mobile and desktop while remaining readable and visually balanced. Preserve existing overlay/gradient layers and keep CTA buttons and navigation behavior unchanged."
         }
       ]
     }

@@ -1,11 +1,51 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-10T02:36:11.380Z",
-  "summary": "REQ-24 appears implemented: the HomePage hero section no longer renders the \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" headline block, while retaining the \"AI-Powered App Builder\" label, supporting paragraph, and CTA buttons to /builder and /browse. Only HomePage plus metadata/state summary files were modified in the provided diff summary.",
-  "missing_requirements": [],
-  "hallucinated_features": [],
-  "confidence": 0.78,
+  "generatedAt": "2026-02-10T04:15:00.496Z",
+  "summary": "HomePage hero layout was adjusted to place the supporting paragraph above the label and CTAs, but the supporting paragraph text was changed (extra sentence added) and the hero overlay/gradients were modified/augmented. Additional unrelated files were also modified, exceeding the requested scope.",
+  "missing_requirements": [
+    {
+      "id": "REQ-26",
+      "requirement": "No user-facing copy in the supporting hero paragraph is changed (English text remains exactly as currently shown).",
+      "reason": "The supporting paragraph now includes an additional sentence after the specified opening line, indicating the copy was changed rather than moved as-is.",
+      "evidence": [
+        "frontend/src/pages/HomePage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "requirement": "The existing hero overlay/gradients remain in place and the paragraph remains readable over the background image in both light and dark themes.",
+      "reason": "The diff shows the overlay gradient classes were changed ('Enhanced Overlay Gradient') and an additional accent gradient wash layer was added, which alters the existing overlay/gradient setup rather than keeping it in place.",
+      "evidence": [
+        "frontend/src/pages/HomePage.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added new/extra hero supporting copy text beyond the specified paragraph opening line (additional sentence).",
+      "reason": "The BuildRequest explicitly states not to change the wording of the hero supporting paragraph; the diff shows added copy.",
+      "evidence": [
+        "frontend/src/pages/HomePage.tsx"
+      ]
+    },
+    {
+      "description": "Modified and expanded hero background overlay/gradient styling (stronger contrast gradient + additional accent gradient wash).",
+      "reason": "The request required existing overlay/gradients to remain in place; adding/changing gradient layers is beyond the requested move/reposition change.",
+      "evidence": [
+        "frontend/src/pages/HomePage.tsx"
+      ]
+    },
+    {
+      "description": "Modified files outside the requested scope of the landing page hero layout (changes not limited to frontend/src/pages/HomePage.tsx).",
+      "reason": "Constraints asked to keep changes scoped to the landing page hero layout in HomePage.tsx, but the diff includes modifications to other files.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
   "changed_files": [
     "frontend-file-summaries.txt",
     "frontend/src/pages/HomePage.tsx",

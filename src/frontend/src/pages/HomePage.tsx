@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Full Bleed */}
-      <section className="relative overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center">
+      <section className="relative overflow-hidden min-h-[500px] md:min-h-[600px] flex items-start">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -26,19 +26,19 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="container relative z-10 py-20 md:py-32">
-          <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
-            <div className="inline-block">
+        <div className="container relative z-10 pt-8 md:pt-16 pb-12 md:pb-20">
+          <div className="max-w-4xl mx-auto text-center space-y-4 animate-fade-in">
+            <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto font-medium text-hero-glow">
+              Create your own AI-powered web app in minutes. No coding required. 
+              Turn your ideas into reality with our intelligent app builder.
+            </p>
+            <div className="inline-block pt-2">
               <span className="inline-flex items-center gap-2 text-primary text-sm font-bold">
                 <Sparkles className="h-4 w-4" />
                 AI-Powered App Builder
               </span>
             </div>
-            <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto font-medium text-hero-glow">
-              Create your own AI-powered web app in minutes. No coding required. 
-              Turn your ideas into reality with our intelligent app builder.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center pt-4">
+            <div className="flex flex-wrap gap-4 justify-center pt-6">
               <Button 
                 size="lg" 
                 onClick={() => navigate({ to: '/builder' })} 

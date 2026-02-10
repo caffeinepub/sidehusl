@@ -1,47 +1,41 @@
 {
   "kind": "build_request",
-  "title": "Remove Home page hero headline block",
+  "title": "Move landing page hero supporting copy to the very top",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-24",
-      "text": "Remove the Home page hero headline block that displays the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" from the hero section on the landing page (frontend/src/pages/HomePage.tsx), while keeping the rest of the hero content (the \"AI-Powered App Builder\" label, supporting paragraph, and CTA buttons) intact and visually balanced.",
+      "id": "REQ-26",
+      "text": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy paragraph that begins with “Create your own AI-powered web app in minutes. No coding required.” to the very top of the hero content (i.e., it should be the first hero text users see), with spacing adjusted so it sits as high as practical within the hero area on both mobile and desktop while remaining readable and visually balanced.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "Remove ,SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY,  block"
+          "Move ,\"create your own ai powered webb app in minutes ,nocod9ng etc farther up ,allthe way to the top of landing"
         ]
       },
       "acceptanceCriteria": [
-        "On the Home page hero section, the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" is not rendered anywhere.",
-        "The hero section still displays the \"AI-Powered App Builder\" label, the supporting paragraph, and both CTA buttons, without awkward extra spacing where the headline used to be.",
-        "No other pages or global navigation elements are changed."
+        "In the Home page hero, the supporting paragraph starting with “Create your own AI-powered web app in minutes. No coding required.” appears above the “AI-Powered App Builder” label (and above the CTA buttons).",
+        "The hero content layout is adjusted (e.g., padding/margins/vertical alignment) so this paragraph is positioned at the top of the hero content area rather than centered, especially on mobile.",
+        "The existing hero overlay/gradients remain in place and the paragraph remains readable over the background image in both light and dark themes.",
+        "No user-facing copy in that paragraph is changed (English text remains exactly as currently shown).",
+        "The CTA buttons and their routes remain unchanged and continue to render correctly across responsive breakpoints."
       ]
     }
   ],
   "constraints": [
-    "Do not modify files under frontend/src/components/ui or any frontend immutablePaths listed in SYSTEM_CONTEXT.",
-    "Keep all user-facing text in English."
+    "Frontend must not modify files in frontend/src/components/ui or any paths listed in frontend.immutablePaths.",
+    "Keep changes scoped to the landing page hero layout (frontend/src/pages/HomePage.tsx); do not alter backend behavior.",
+    "Do not introduce any external AI services or new dependencies."
   ],
   "nonGoals": [
-    "Do not change the hero background image, overlay gradients, or CTA button routes (/builder and /browse).",
-    "Do not alter backend behavior or data models."
+    "Changing the wording of the hero supporting paragraph.",
+    "Changing the background hero image or generating new assets.",
+    "Modifying global navigation, routing, or CTA destinations."
   ],
   "imageRequirements": {
     "required": [],
     "edits": []
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
   }
 }

@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-home-page-hero-headline-block-that-displays-the-text-sidehusl-ai-build-your-side-hustle-today-from-the-hero-section-on-the-landing-page-frontend-src-pages-homepage-tsx-while-keeping-the-rest-of-the-hero-content-the-ai-powered-app-builder-label-supporting-paragraph-and-cta-buttons-intact-and-visually-balanced",
-      "featureTitle": "Remove the Home page hero headline block that displays the text \"SIDEHUSL AI, BUILD YOUR SIDE HUSTLE TODAY!\" from the hero section on the landing page (frontend/src/pages/HomePage.tsx), while keeping the rest of the hero content (the \"AI-Powered App Builder\" label, supporting paragraph, and CTA buttons) intact and visually balanced.",
+      "featureId": "feature-on-the-landing-page-hero-frontend-src-pages-homepage-tsx-move-the-supporting-hero-copy-paragraph-that-begins-with-create-your-own-ai-powered-web-app-in-minutes-no-coding-required-to-the-very-top-of-the-hero-content-i-e-it-should-be-the-first-hero-text-users-see-with-spacing-adjusted-so-it-sits-as-high-as-practical-within-the-hero-area-on-both-mobile-and-desktop-while-remaining-readable-and-visually-balanced",
+      "featureTitle": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy paragraph that begins with “Create your own AI-powered web app in minutes. No coding required.” to the very top of the hero content (i.e., it should be the first hero text users see), with spacing adjusted so it sits as high as practical within the hero area on both mobile and desktop while remaining readable and visually balanced.",
       "files": [
         "frontend/src/pages/HomePage.tsx"
       ],
@@ -16,7 +16,7 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-24"
+        "REQ-26"
       ],
       "confidence": "high"
     }

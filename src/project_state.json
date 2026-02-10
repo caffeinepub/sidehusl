@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 21,
+  "projectStateVersion": 25,
   "summary": "Pivot/rebrand SIDEHUSL into SIDEHU$L AI ($IDEHUSL AI): an AI-focused platform including a branded AI app builder experience (similar to caffeine.ai) plus wallet-based micropayments and creator resources, while retaining/expanding beyond the original side-job discovery concept.",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-the-sidehusl-application-shell-and-navigation-structure-for-a-side-job-discovery-app-focused-on-local-part-time-opportunities-in-the-tech-and-crypto-industry",
@@ -165,6 +165,22 @@
         "REQ-24"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-on-the-landing-page-hero-frontend-src-pages-homepage-tsx-move-the-supporting-hero-copy-the-paragraph-that-starts-with-create-your-own-ai-powered-web-app-in-minutes-no-coding-required-higher-up-in-the-header-landing-page-layout-so-it-appears-closer-to-the-top-of-the-hero-area-above-the-fold-especially-on-mobile-while-keeping-the-existing-hero-label-ai-powered-app-builder-paragraph-text-cta-buttons-overlay-gradients-and-responsiveness-intact",
+      "title": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy (the paragraph that starts with “Create your own AI-powered web app in minutes. No coding required.”) higher up in the header/landing page layout so it appears closer to the top of the hero area above the fold (especially on mobile), while keeping the existing hero label (“AI-Powered App Builder”), paragraph text, CTA buttons, overlay gradients, and responsiveness intact.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-the-landing-page-hero-frontend-src-pages-homepage-tsx-move-the-supporting-hero-copy-paragraph-that-begins-with-create-your-own-ai-powered-web-app-in-minutes-no-coding-required-to-the-very-top-of-the-hero-content-i-e-it-should-be-the-first-hero-text-users-see-with-spacing-adjusted-so-it-sits-as-high-as-practical-within-the-hero-area-on-both-mobile-and-desktop-while-remaining-readable-and-visually-balanced",
+      "title": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy paragraph that begins with “Create your own AI-powered web app in minutes. No coding required.” to the very top of the hero content (i.e., it should be the first hero text users see), with spacing adjusted so it sits as high as practical within the hero area on both mobile and desktop while remaining readable and visually balanced.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -275,6 +291,12 @@
     {
       "id": "AR-24",
       "summary": "Remove the background color behind the hero/header text, leaving only the words visible (no colored backdrop).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Move the landing page header/hero supporting copy (e.g., \"create your own AI powered app in minutes, no coding\") higher up on the header/landing page layout.",
       "reqIds": [],
       "status": "pending"
     }
