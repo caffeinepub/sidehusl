@@ -1,23 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Reorder and top-align landing page hero supporting copy",
+  "title": "Adjust Home hero spacing to lower primary CTA buttons",
   "requirements": [
     {
-      "id": "REQ-26",
-      "summary": "Move the hero supporting paragraph to the top of the Home page hero content and adjust layout spacing so it sits as high as practical while preserving readability, overlays/gradients, and existing CTAs/routes.",
+      "id": "REQ-27",
+      "summary": "Lower the HomePage hero CTA button row by increasing vertical spacing above it while preserving all existing hero content, overlays, responsiveness, and navigation behavior.",
       "acceptanceCriteria": [
-        "In the Home page hero, the supporting paragraph starting with “Create your own AI-powered web app in minutes. No coding required.” appears above the “AI-Powered App Builder” label (and above the CTA buttons).",
-        "The hero content layout is adjusted (e.g., padding/margins/vertical alignment) so this paragraph is positioned at the top of the hero content area rather than centered, especially on mobile.",
-        "The existing hero overlay/gradients remain in place and the paragraph remains readable over the background image in both light and dark themes.",
-        "No user-facing copy in that paragraph is changed (English text remains exactly as currently shown).",
-        "The CTA buttons and their routes remain unchanged and continue to render correctly across responsive breakpoints."
+        "On the Home page hero, the “Open AI App Builder” and “Browse Opportunities” buttons render noticeably lower than before (increased vertical spacing above the button row) on mobile and desktop breakpoints.",
+        "The hero’s supporting paragraph and “AI-Powered App Builder” label remain in the same order and remain readable against the background image due to the existing overlay gradients.",
+        "No changes to button text (must remain in English) and both buttons still navigate correctly to /builder and /browse.",
+        "No changes are made to the global sticky header navigation (frontend/src/components/AppShell.tsx) as part of this spacing adjustment."
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/HomePage.tsx",
           "operation": "modify",
-          "description": "In the hero section, reorder the hero content so the supporting paragraph (beginning with “Create your own AI-powered web app in minutes. No coding required.”) renders first, above the “AI-Powered App Builder” label and above the CTA buttons. Update hero container/section layout classes to top-align the hero content within the hero area (e.g., adjust flex alignment and top padding/margins) with responsive spacing so it sits as high as practical on mobile and desktop while remaining readable and visually balanced. Preserve existing overlay/gradient layers and keep CTA buttons and navigation behavior unchanged."
+          "description": "Adjust the hero layout spacing by increasing the top padding/margin applied to the CTA button-row container (currently the wrapper div with `flex flex-wrap ... pt-6`) using responsive Tailwind classes (e.g., larger `pt-*` with an `md:` variant) so the button row sits further down within the hero on both mobile and desktop, without changing any hero text, overlay gradient elements, or the existing navigate targets (/builder, /browse)."
         }
       ]
     }

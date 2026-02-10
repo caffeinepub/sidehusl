@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-on-the-landing-page-hero-frontend-src-pages-homepage-tsx-move-the-supporting-hero-copy-paragraph-that-begins-with-create-your-own-ai-powered-web-app-in-minutes-no-coding-required-to-the-very-top-of-the-hero-content-i-e-it-should-be-the-first-hero-text-users-see-with-spacing-adjusted-so-it-sits-as-high-as-practical-within-the-hero-area-on-both-mobile-and-desktop-while-remaining-readable-and-visually-balanced",
-      "featureTitle": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy paragraph that begins with “Create your own AI-powered web app in minutes. No coding required.” to the very top of the hero content (i.e., it should be the first hero text users see), with spacing adjusted so it sits as high as practical within the hero area on both mobile and desktop while remaining readable and visually balanced.",
+      "featureId": "feature-on-the-home-landing-page-hero-frontend-src-pages-homepage-tsx-lower-the-two-primary-call-to-action-buttons-open-ai-app-builder-and-browse-opportunities-by-adjusting-the-hero-layout-spacing-so-the-button-row-sits-further-down-within-the-hero-area-on-both-mobile-and-desktop-while-keeping-all-existing-hero-text-readability-overlays-and-responsive-behavior-intact",
+      "featureTitle": "On the Home/Landing page hero (frontend/src/pages/HomePage.tsx), lower the two primary call-to-action buttons (“Open AI App Builder” and “Browse Opportunities”) by adjusting the hero layout spacing so the button row sits further down within the hero area on both mobile and desktop, while keeping all existing hero text, readability overlays, and responsive behavior intact.",
       "files": [
         "frontend/src/pages/HomePage.tsx"
       ],
@@ -16,7 +16,7 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-26"
+        "REQ-27"
       ],
       "confidence": "high"
     }

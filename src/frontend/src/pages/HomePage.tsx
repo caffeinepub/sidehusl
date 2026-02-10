@@ -38,7 +38,7 @@ export default function HomePage() {
                 AI-Powered App Builder
               </span>
             </div>
-            <div className="flex flex-wrap gap-4 justify-center pt-6">
+            <div className="flex flex-wrap gap-4 justify-center pt-12 md:pt-16">
               <Button 
                 size="lg" 
                 onClick={() => navigate({ to: '/builder' })} 

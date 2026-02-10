@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-10T04:15:00.500Z",
+  "generatedAt": "2026-02-10T04:23:59.724Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,8 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-26",
-        "summary": "On the landing page hero (frontend/src/pages/HomePage.tsx), move the supporting hero copy paragraph that begins with “Create your own AI-powered web app in minutes. No coding required.” to the very top of the hero content (i.e., it should be the first hero text users see), with spacing adjusted so it sits as high as practical within the hero area on both mobile and desktop while remaining readable and visually balanced.",
+        "id": "REQ-27",
+        "summary": "On the Home/Landing page hero (frontend/src/pages/HomePage.tsx), lower the two primary call-to-action buttons (“Open AI App Builder” and “Browse Opportunities”) by adjusting the hero layout spacing so the button row sits further down within the hero area on both mobile and desktop, while keeping all existing hero text, readability overlays, and responsive behavior intact.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/pages/HomePage.tsx"

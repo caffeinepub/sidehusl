@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 25,
+  "projectStateVersion": 27,
   "summary": "Pivot/rebrand SIDEHUSL into SIDEHU$L AI ($IDEHUSL AI): an AI-focused platform including a branded AI app builder experience (similar to caffeine.ai) plus wallet-based micropayments and creator resources, while retaining/expanding beyond the original side-job discovery concept.",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": false,
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-the-sidehusl-application-shell-and-navigation-structure-for-a-side-job-discovery-app-focused-on-local-part-time-opportunities-in-the-tech-and-crypto-industry",
@@ -181,6 +181,14 @@
         "REQ-26"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-on-the-home-landing-page-hero-frontend-src-pages-homepage-tsx-lower-the-two-primary-call-to-action-buttons-open-ai-app-builder-and-browse-opportunities-by-adjusting-the-hero-layout-spacing-so-the-button-row-sits-further-down-within-the-hero-area-on-both-mobile-and-desktop-while-keeping-all-existing-hero-text-readability-overlays-and-responsive-behavior-intact",
+      "title": "On the Home/Landing page hero (frontend/src/pages/HomePage.tsx), lower the two primary call-to-action buttons (“Open AI App Builder” and “Browse Opportunities”) by adjusting the hero layout spacing so the button row sits further down within the hero area on both mobile and desktop, while keeping all existing hero text, readability overlays, and responsive behavior intact.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -297,6 +305,12 @@
     {
       "id": "AR-25",
       "summary": "Move the landing page header/hero supporting copy (e.g., \"create your own AI powered app in minutes, no coding\") higher up on the header/landing page layout.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Adjust the Home/Header hero layout to lower the \"Open AI App Builder\" and \"Browse Opportunity\" buttons (move them down on the header page for better spacing/alignment).",
       "reqIds": [],
       "status": "pending"
     }

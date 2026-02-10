@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Move the landing page hero supporting paragraph to the very top of the hero content while keeping readability and the existing hero visuals intact.
+**Goal:** Lower the two primary CTA buttons in the Home page hero so they sit further down within the hero area on mobile and desktop, without changing any existing hero content or behavior.
 
 **Planned changes:**
-- In `frontend/src/pages/HomePage.tsx`, reorder the hero content so the supporting paragraph beginning with “Create your own AI-powered web app in minutes. No coding required.” is the first text shown (above the “AI-Powered App Builder” label and CTA buttons).
-- Adjust hero layout spacing/alignment (padding/margins/vertical alignment) so the paragraph sits as high as practical within the hero area on mobile and desktop while remaining readable and visually balanced.
-- Preserve existing hero overlay/gradients and ensure the paragraph remains readable over the background image in both light and dark themes, without changing any copy or CTA behavior.
+- Adjust layout spacing in `frontend/src/pages/HomePage.tsx` to increase vertical space above the hero CTA button row (“Open AI App Builder” and “Browse Opportunities”) on both mobile and desktop breakpoints.
+- Preserve existing hero text order, readability overlays/gradients, and responsive behavior; do not modify the sticky header component.
 
-**User-visible outcome:** On the home page, users see the supporting hero paragraph at the top of the hero section before the label and buttons, with a well-balanced layout across screen sizes.
+**User-visible outcome:** On the Home/Landing page, the “Open AI App Builder” and “Browse Opportunities” buttons appear noticeably lower in the hero section while everything else looks and behaves the same, and both buttons still navigate to `/builder` and `/browse`.
